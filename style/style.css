@@ -1,0 +1,117 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Varela Round;
+}
+
+.main {
+  height: 100vh;
+  background: linear-gradient(#281eff, #2dff8c);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  color: #ffffff;
+  font: normal normal normal 160px Satisfy;
+  text-shadow: 0px 0px 36px #00000087;
+  text-align: center;
+}
+
+h2 {
+  color: #ffffff;
+  font: normal normal normal 32px Varela Round;
+  padding-top: 10px;
+  text-align: center;
+}
+
+p {
+  color: #f9f9f9;
+  font: normal normal normal 16px Varela Round;
+  padding-top: 18px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 38px;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+
+form div {
+  display: flex;
+  margin-bottom: 12px;
+  flex-direction: column;
+}
+
+form label {
+  font: normal normal normal 16px Varela Round;
+  margin-bottom: 5px;
+  color: #F9F9F9;
+}
+
+form input {
+  height: 50px;
+  font-size: 1.25rem;
+  background: #F6F6F624 0%;
+  border: 2px solid #FFFFFF;
+  width: 417px;
+  min-width: 60px;
+}
+
+button {
+  width: 206px;
+  height: 50px;
+  color: #1C1C1C;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+@media only screen and (max-width: 1120px) {
+  form {
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px;
+  }
+
+  button {
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 706px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  h1 {
+    font-size: 65px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  p {
+    display: none;
+  }
+
+  form input {
+    max-width: 300px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
